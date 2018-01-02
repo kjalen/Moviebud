@@ -1,0 +1,26 @@
+doctype html
+
+- var poster_url = movie_json.poster_image.image_files[4].url
+
+
+head
+  title= title
+  
+
+body
+  h1= title
+  #poster
+    img.image(src=poster_url)
+  
+  h2
+    ul#movie-times Movie Showtimes
+
+  h3
+    ul#cast Cast
+    - for (i = 0; i < 10; i++)
+      li #{movie_json.cast[i].name} as #{movie_json.cast[i].character}
+      
+
+script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+script(src="/script/movies.js")
+script(src="/script/common.js")

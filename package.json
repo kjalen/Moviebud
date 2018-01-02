@@ -1,0 +1,27 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "one stop shop for your movie info",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "kjalen",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kjalen/Moviebud.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.33",
+    "node-fetch": "^1.7.3",
+    "pug": "^2.0.0-rc.4",
+    "routes": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  }
+}

@@ -1,0 +1,16 @@
+doctype html
+
+head
+  style
+    include /css/style.css
+  title= title
+body
+  h1= message
+  #wrapper
+    - for (i = 0; i < json.length; i++)
+      li
+        a(href='movies/' + json[i].id)
+          img.image(src=json[i].poster_image_thumbnail)
+
+script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+script(src="/script/index.js")
