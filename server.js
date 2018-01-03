@@ -67,7 +67,6 @@ function get_movie_json(movie_id){
 
 }
 
- // https://api.internationalshowtimes.com/v4/showtimes/?apikey=iCgCjwBWEmcyGmdZfcRiPfJE855MHvpc&city_ids=4978&movie_id=16216&cinema_id=48123
 function get_movie_showtimes(movie_id){
   let city_id = 4978; // Victoria
   let cinema_id = 48123;
